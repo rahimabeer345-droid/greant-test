@@ -1,0 +1,160 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:#111;
+  color:white;
+}
+
+/* Navbar */
+header{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 50px;
+  background:black;
+  position:fixed;
+  width:100%;
+}
+
+nav a{
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+}
+
+/* Hero */
+.hero{
+  height:100vh;
+  background:url('https://images.unsplash.com/photo-1555992336-03a23c7b20ee') no-repeat center/cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:60px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:10px 25px;
+  background:red;
+  color:white;
+  text-decoration:none;
+}
+
+/* Food Card */
+.menu-section{
+  padding:120px 50px;
+}
+
+.food-card{
+  display:flex;
+  margin:40px 0;
+  background:#222;
+  border-radius:10px;
+  overflow:hidden;
+  transition:0.4s;
+}
+
+.food-card:hover{
+  transform:scale(1.05);
+}
+
+.food-card img{
+  width:400px;
+  height:300px;
+  object-fit:cover;
+}
+
+.food-card div{
+  padding:20px;
+}
+
+/* Cart */
+.cart-section{
+  padding:150px 50px;
+}
+
+/* Payment */
+.payment{
+  padding:150px 50px;
+  text-align:center;
+}
+
+.payment-box{
+  background:#222;
+  padding:20px;
+  margin:20px;
+  border-radius:10px;
+}
+
+footer{
+  background:black;
+  text-align:center;
+  padding:20px;
+}
+.category{
+  margin-top:60px;
+  font-size:28px;
+  color:#ff3c00;
+  border-left:5px solid red;
+  padding-left:15px;
+}
+.checkout{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:#111;
+  color:white;
+}
+
+.payment-option{
+  background:#222;
+  padding:20px 40px;
+  margin:15px;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+  width:250px;
+  text-align:center;
+}
+
+.payment-option:hover{
+  background:#ff3c00;
+}
+
+.selected{
+  background:#ff3c00 !important;
+}
+
+.processing-screen{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  background:black;
+  color:white;
+}
+
+.loader{
+  border:6px solid #333;
+  border-top:6px solid #ff3c00;
+  border-radius:50%;
+  width:60px;
+  height:60px;
+  animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+  100%{ transform:rotate(360deg); }
+}
